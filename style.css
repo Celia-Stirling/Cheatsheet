@@ -1,3 +1,5 @@
+/******** Universal Styles **********/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,12 +27,28 @@ h2 {
     text-align: center;
     font-size: 2rem;
     padding-top: 75px;
+    padding-bottom: 75px;
     font-family: monospace;
 }
 
-.grid {
+h3 {
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+/********** Grids ***********/
+
+    /****** Index page *******/
+
+#Index-grid {
     display: grid;
-    grid-template: 1fr repeat(2, 2fr) / repeat(3, 1fr);
+    grid-template: 125px repeat(2, 1fr) / repeat(3, 1fr);
     grid-gap: 20px;
     height: 700px;
     grid-template-areas: "header header header"
@@ -74,4 +92,50 @@ header {
 
 #Command-Line {
     grid-area: Command-Line;
+}
+
+    /******* Main Pages *********/
+
+.main-grid {
+    display: grid;
+    grid-template: 125px repeat(2, 1fr) / 1fr 1fr;
+    grid-column-gap: 20px;
+    height: 700px;
+    grid-template-areas: "header header"
+                        "Basic-Tags Basic-Tags-Ex"
+                        "Tables Tables-Ex";
+}
+
+#Basic-Tags {
+    grid-area: Basic-Tags;
+}
+
+#Basic-Tags-Ex {
+    grid-area: Basic-Tags-Ex;
+}
+
+#Tables {
+    grid-area: Tables;
+}
+
+#Tables-Ex {
+    grid-area: Tables-Ex;
+}
+
+.Tags-Attributes {
+    background-color: orange;
+    margin: solid black 2px;
+    width: 600px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+}
+
+.Example-Code {
+    background-color: purple;
+    margin: solid black 2px;
+    width: 600px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
 }
