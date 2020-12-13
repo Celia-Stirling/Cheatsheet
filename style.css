@@ -10,6 +10,7 @@
 
 body {
     background-color: violet;
+    font-family: verdana, sans-serif;
 }
 
 h1 {
@@ -19,23 +20,32 @@ h1 {
     font-size: 3rem;
     padding-top: 30px;
     letter-spacing: 1rem;
-    font-family: monospace;
+    font-family: Helvetica, sans-serif;
 }
 
 h2 {
     color: red;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding-top: 75px;
     padding-bottom: 75px;
-    font-family: monospace;
 }
 
 h3 {
     color: red;
     text-align: center;
     font-size: 2rem;
+    padding-bottom: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+h4 {
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
     font-family: monospace;
+    text-decoration: underline;
+    padding-top: 10px;
 }
 
 a {
@@ -61,7 +71,7 @@ header {
 
 .box {
     background-color: springgreen;
-    margin: solid black 2px;
+    border: solid black 2px;
     width: 250px;
     height: 200px;
     justify-self: center;
@@ -79,8 +89,6 @@ header {
 }
 
 .main-info {
-    background-color: orange;
-    margin: solid black 2px;
     width: 600px;
     height: 200px;
     justify-self: center;
@@ -89,9 +97,49 @@ header {
 
 .example-code {
     background-color: purple;
-    margin: solid black 2px;
+    border: solid black 2px;
     width: 600px;
     height: 200px;
     justify-self: center;
     align-self: center;
+}
+
+table {
+   width: 600px;
+   border-collapse: collapse;
+}
+
+table th, td {
+    border: solid black 2px; 
+}
+
+table th {
+    background-color: pink;
+    padding: 10px;
+}
+
+table td {
+   padding: 5px; 
+}
+
+.tag-heading th {
+    width: 25%;
+}
+
+.name-heading th {
+    width: 25%;
+}
+
+.description-heading th {
+    width: 50%;
+}
+
+.tag {
+    background-color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+.name {
+    text-align: center;
 }
